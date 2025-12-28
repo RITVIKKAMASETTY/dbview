@@ -17,7 +17,6 @@ use std::path::PathBuf;
 /// A human-readable CLI interface for understanding SQLite database files
 #[derive(Parser)]
 #[command(name = "dbview")]
-#[command(author = "Ritvik K")]
 #[command(version = "0.1.0")]
 #[command(about = "Explore and understand SQLite databases without SQL knowledge")]
 #[command(long_about = None)]
