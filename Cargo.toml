@@ -1,0 +1,34 @@
+[package]
+name = "dbview"
+version = "0.1.0"
+edition = "2021"
+description = "A human-readable CLI interface for understanding SQLite database files"
+authors = ["Ritvik K"]
+
+[dependencies]
+# CLI parsing
+clap = { version = "4.4", features = ["derive"] }
+
+# SQLite database
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+# Table formatting
+tabled = "0.15"
+comfy-table = "7.1"
+
+# Terminal visualization
+textplots = "0.8"
+
+# Colors and styling
+colored = "2.1"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Number formatting
+num-format = "0.4"
+
+[[bin]]
+name = "dbview"
+path = "src/main.rs"

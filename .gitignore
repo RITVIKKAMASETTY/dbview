@@ -1,0 +1,16 @@
+# Rust build artifacts
+/target/
+
+# SQLite databases (local test files)
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+
+# macOS system files
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
